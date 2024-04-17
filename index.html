@@ -3,32 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Sesiunea 8</title>
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <a>Logo</a>
+    <title>
+      Accesorii premium pentru casa ta. Inchidere terasa cu sticla, rulouri
+      exterioare, plase insecte plisse, rolete
+    </title>
+  <!--  Material Icons-->
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"  
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <div>
-          <label for="toggle" class="material-icons">menu</label>
-          <input type="checkbox" id="toggle" />
-          <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+<!-- CSS-ul nostru -->
+<link rel="stylesheet" href="/styles/main.css" />
+</head>
+
+
+
+<body>
+  <header>
+<nav id="navbar">
+  <a href="/pages/index.html">
+  <img src="/" height="80px" alt="Logo" />
+  </a>
+
+  <div>
+    <!-- Hidden in web view, needed for mobile -->
+    <label for="toggle" class="material-icons">menu</label>
+    <input type="checkbox" id="toggle" />
+
+  
+    <!-- The actual menu -->
+    <ul id="menu">
+          <li><a href="/pages/index.html">Acasa</a></li>
+          <li><a href="/pages/produse.html">Produse</a></li>
+          <li><a href="/pages/portofoliu.html">Portofoliu</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+
+<section id="about">
+  <h1 class="intro-text">Bine ați venit pe Home Improvement</h1>
+  <p>
+    Suntem specializați în oferirea soluțiilor de montare a rulourilor
+    exterioare, plaselor de țânțari și închiderilor balconelor cu sticlă,
+    pentru a vă aduce confort și securitate în locuința dumneavoastră. Cu
+    ani de experiență în domeniu, echipa noastră dedicată este pregătită să
+    vă ofere servicii de înaltă calitate, adaptate nevoilor și preferințelor
+    dumneavoastră.
+  </p>
+  <p>
+    Indiferent dacă doriți să vă protejați locuința de intemperii, insecte
+    sau zgomot exterior, suntem aici pentru a vă oferi soluții eficiente și
+    estetice. Fie că aveți nevoie de rulouri exterioare moderne și durabile,
+    plase de țânțari ce asigură aerisirea optimă a locuinței sau închideri
+    de balcon cu sticlă ce adaugă valoare spațiului dumneavoastră, suntem
+    partenerul de încredere pe care vă puteți baza.
+  </p>
+
+  <p>
+    Vizualizați <a href="/pages/portofoliu.html">portofoliu</a> nostru pentru a vedea cum am transformat
+    locuințele clienților noștri și contactați-ne pentru o consultare și
+    ofertă personalizată. Echipa noastră vă stă la dispoziție cu expertiză
+    și profesionalism pentru a vă ajuta să vă transformați locuința într-un
+    spațiu confortabil și sigur pentru întreaga familie. Contactați-ne
+    astăzi și lăsați-ne să vă ajutăm să transformați visul dumneavoastră în
+    realitate!
+  </p>
+</section>
+
+<!--Cards-->
+<div class="card-group">
+  <div class="card">
+    <img src="/inchideri-terase-cu-geamuri-mobile_651.jpg" class="card-img-top"
+    id="pic-resize" 
+    alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sticla Parcata</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      
+    </div>
+  </div>
+  <div class="card">
+    <img src="/pics/th (1).jpeg" class="card-img-top" 
+    id="pic-resize" 
+    alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Rulouri exterioare</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      
+    </div>
+  </div>
+  <div class="card">
+    <img src="/pics/plasa-plisse-2-canate-poza-1-1152x1536.jpg" class="card-img-top"
+    id="pic-resize" 
+    alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Plase tantari plisse</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+     
+    </div>
+  </div>
+</div>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Home Improvement. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="https://www.youtube.com/shorts/lf_t-089-8o" target="_blank">Youtube</a>
         </div>
-      </nav>
-    </header>
-    <main>Content</main>
+      </div>
+    </footer>
 
-    <footer>Footer</footer>
+    <!-- Bootstrap functii si JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
   </body>
 </html>
