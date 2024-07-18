@@ -44,7 +44,7 @@ p {
 
 #contact-bubble {
   position: fixed;
-  z-index: 20;
+  z-index: 200;
   top: 50px;
   right: 25px;
   width: 150px;
