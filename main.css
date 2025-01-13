@@ -1,8 +1,9 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
-  /*Color pallete  */
+  /*Color pallete*/
   --grey: #1e2939; /*Main color*/
   --orange: #fb8500;
   --white: #f9f9f9;
@@ -119,6 +120,23 @@ p {
 
 #card {
   gap: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap and adjust */
+  justify-content: space-between; /* Ensures equal spacing between cards */
+}
+
+.card-item {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  width: 30%; /* Default size for larger screens */
+  margin: 10px 0;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
 }
 
 .footer-content {
@@ -172,6 +190,25 @@ p {
     top: 60px;
     background-color: white;
   }
+
+  .container {
+    padding: 10px;
+  }
+
+  #card {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .card-item {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust video size on small screens */
+  .video {
+    height: 250px;
+  }
 }
 
 .material-icons {
@@ -181,7 +218,7 @@ p {
 #pic-resize {
   height: 370px;
   justify-content: center;
-  spa
+  spa;
 }
 
 .roboto-thin {
