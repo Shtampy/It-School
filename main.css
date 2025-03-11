@@ -222,6 +222,7 @@ p {
 }
 
 .whatsapp-float {
+    z-index: 200;
     position: fixed;
     bottom: 20px;
     right: 20px;
